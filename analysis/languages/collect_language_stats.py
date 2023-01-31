@@ -10,7 +10,7 @@ from github import Github
 
 languages_api = "https://api.github.com/repos/{}/{}/languages"
 languages_md = {}
-total_lines = 344
+total_lines = num_lines = sum(1 for line in open('../../scraping/repo_list/data/awesome_ml_mv.csv'))
 
 # Github client
 load_dotenv()
@@ -49,12 +49,10 @@ with open(
         owner, repo = re.search("https://github.com/(.*)$", row[HEADER["LINK"]]).group(1).rstrip("/").split('/')
         
         print('---')
-        print(f'[{round((i+1) * 100 / total_lines, 1)}%] Requesting languages from {owner}/{repo}:')
+        print(f'[{round((i+1) * 100 / total_lines, 1)}%] Requesting languages from {owner}/{repo}')
         
         languages_md[row[HEADER["NAME"]]] = languages(row[HEADER["LINK"]])
-
-        print(languages_md)
-    
+            
         i += 1
 
 with open('data/languages_metadata.json', 'w', encoding='utf-8') as outfile:

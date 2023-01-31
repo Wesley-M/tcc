@@ -1,0 +1,294 @@
+repo,py_percentage
+Scikit-Image,78.46
+Scikit-Opt,99.46
+SimpleCV,96.55
+OpenFace,41.61
+PCV,99.68
+face_recognition,79.17
+deepface,98.68
+retinaface,100.0
+Detectron,92.98
+detectron2,93.95
+albumentations,99.84
+pytessarct,100.0
+imutils,100.0
+PyTorchCV,25.8
+Self-supervised learning,99.92
+neural-style-pt,100.0
+Detecto,100.0
+neural-dream,100.0
+Deep High-Resolution-Net,31.39
+dream-creator,100.0
+Lucent,100.0
+lightly,99.84
+Learnergy,100.0
+IoT Owl,100.0
+pkuseg-python,66.57
+NLTK,98.11
+Pattern,87.17
+Quepy,100.0
+TextBlob,100.0
+YAlign,64.93
+jieba,52.05
+SnowNLP,100.0
+spammy,96.77
+loso,100.0
+genius,100.0
+KoNLPy,77.42
+nut,24.93
+Rosetta,30.22
+PyNLPl,99.72
+PySS3,81.36
+python-ucto,21.75
+python-zpar,52.89
+spaCy,77.27
+PyStanfordDependencies,100.0
+Distance,30.7
+Fuzzy Wuzzy,91.67
+jellyfish,95.97
+editdistance,29.2
+textacy,99.94
+stanford-corenlp-python,100.0
+CLTK,96.44
+Rasa,99.27
+yase,100.0
+Polyglot,50.05
+DrQA,98.08
+Dedupe,99.1
+Snips NLU,100.0
+NeuroNER,92.78
+DeepPavlov,99.47
+BigARTM,30.17
+NALP,100.0
+DL Translate,98.92
+RexMex,99.91
+ChemicalX,99.95
+Shapley,100.0
+igel,97.09
+ML/DL project template,100.0
+PyTorch Geometric Temporal,100.0
+Little Ball of Fur,100.0
+Karate Club,100.0
+Auto_ViML,67.83
+PyOD,86.23
+steppy,100.0
+steppy-toolkit,100.0
+Couler,89.71
+auto_ml,100.0
+dtaidistance,48.64
+machine learning,30.82
+XGBoost,22.22
+ChefBoost,100.0
+Apache SINGA,20.97
+Featureforge,100.0
+Towhee,99.49
+scikit-learn,92.26
+metric-learn,100.0
+Intel(R) Extension for Scikit-learn,75.92
+SimpleAI,91.03
+astroML,99.81
+BigML,100.0
+NuPIC,97.5
+Pylearn2,51.73
+keras,97.55
+Lasagne,100.0
+hebel,100.0
+Chainer,76.29
+prophet,61.98
+gensim,92.17
+topik,96.81
+PyBrain,99.22
+Brainstorm,99.72
+Surprise,77.07
+implicit,60.25
+LightFM,99.09
+python-recsys,100.0
+thinking bayes,44.43
+Image-to-Image Translation with Conditional Adversarial Networks,100.0
+Restricted Boltzmann Machines,100.0
+CoverTree,98.93
+nilearn,98.31
+neuropredict,99.35
+imbalanced-learn,96.16
+imbalanced-ensemble,100.0
+Pyevolve,99.82
+pyhsmm,92.01
+SKLL,99.7
+neurolab,79.56
+Spearmint,99.76
+Pebl,83.83
+Theano,93.84
+TensorFlow,21.07
+python-timbl,63.4
+deap,86.48
+pydeep,100.0
+mlxtend,99.71
+neon,54.36
+Neural Networks and Deep Learning,100.0
+Annoy,34.4
+TPOT,75.82
+pgmpy,99.62
+DIGITS,31.33
+Orange,98.45
+MXNet,34.68
+milk,82.38
+TFLearn,100.0
+fuku-ml,99.92
+Xcessiv,59.54
+PyTorch,43.56
+PyTorch Lightning,98.71
+PyTorch Lightning Bolts,99.92
+skorch,30.5
+ML-From-Scratch,100.0
+Edward,29.88
+xRBM,100.0
+CatBoost,26.07
+stacked_generalization,100.0
+modAL,99.9
+Cogitare,100.0
+Parris,92.13
+neonrvm,22.46
+mlens,99.97
+Thampi,100.0
+MindsDB,99.63
+Microsoft Recommenders,97.96
+StellarGraph,98.78
+BentoML,93.88
+MiraiML,98.06
+numpy-ML,100.0
+Neuraxle,99.93
+Cornac,59.94
+JAX,93.99
+Catalyst,98.77
+scikit-multiflow,98.69
+Lightwood,53.14
+bayeso,100.0
+mljar-supervised,100.0
+evostra,100.0
+Determined,34.89
+PyGrid,99.22
+sktime,99.57
+OPFython,100.0
+Opytimizer,100.0
+Gradio,8.43
+Hub,99.98
+Synthia,89.21
+ByteHub,100.0
+Backprop,100.0
+River,97.59
+FEDOT,99.94
+Sklearn-genetic-opt,100.0
+Evidently,95.73
+Streamlit,52.7
+Optuna,99.57
+Deepchecks,98.81
+Cartopy,97.45
+SciPy,56.8
+NumPy,61.76
+AutoViz,100.0
+Numba,92.4
+Mars,96.92
+NetworkX,100.0
+igraph,97.81
+Pandas,90.08
+Vaex,60.87
+Open Mining,98.16
+PyMC,99.59
+zipline,95.74
+PyDy,81.11
+SymPy,98.37
+statsmodels,92.69
+astropy,65.62
+matplotlib,90.94
+bokeh,53.67
+plotly,98.01
+altair,99.88
+d3py,98.09
+PyDexter,100.0
+ggplot,99.83
+Kartograph.py,99.73
+pygal,97.54
+PyQtGraph,98.93
+pycascading,48.24
+Petrel,85.72
+Blaze,99.99
+emcee,84.77
+windML,100.0
+vispy,86.6
+NuPIC Studio,99.59
+SparklingPandas,91.7
+Seaborn,99.98
+ipychart,56.06
+bqplot,20.73
+Superset,31.0
+Dora,100.0
+Ruffus,99.22
+visualize_ML,100.0
+scikit-plot,100.0
+Bowtie,72.17
+PyCM,97.52
+Dash,36.55
+Lambdo,100.0
+dowel,98.74
+BioPy,100.0
+CAEs for Data Assimilation,99.92
+SVM Explorer,67.32
+thinking stats 2,100.0
+hyperopt,100.0
+numpic,97.5
+2012-paper-diginorm,96.3
+data-science-ipython-notebooks,99.99
+decision-weights,100.0
+Diffusion Segmentation,100.0
+Scipy Tutorials,100.0
+Crab,100.0
+BayesPy,30.99
+scikit-learn tutorials,92.71
+sentiment-analyzer,28.77
+group-lasso,100.0
+climin,100.0
+Allen Downey’s Think Bayes Code,44.43
+Suiron,100.0
+Prodmodel,90.69
+Keras Tuner,99.72
+nn_builder,100.0
+NeuralTalk,80.29
+Neuron,100.0
+Data Driven Code,100.0
+TResNet: High Performance GPU-Dedicated Architecture,100.0
+TResNet: Simple and powerful neural network library for python,79.56
+Jina AI,98.78
+sequitur,100.0
+open-solution-home-credit,56.25
+open-solution-googleai-object-detection,97.29
+open-solution-salt-identification,89.18
+open-solution-ship-detection,96.01
+open-solution-data-science-bowl-2018,100.0
+open-solution-value-prediction,100.0
+open-solution-toxic-comments,83.78
+wiki challenge,100.0
+kaggle insults,100.0
+kaggle_acquire-valued-shoppers-challenge,100.0
+kaggle-cifar,98.91
+kaggle-blackbox,23.67
+kaggle-accelerometer,100.0
+kaggle-advertised-salaries,98.02
+kaggle amazon,100.0
+kaggle-bestbuy_big,100.0
+kaggle-bestbuy_small,93.97
+Kaggle Dogs vs. Cats,96.5
+Kaggle Galaxy Challenge,93.21
+Kaggle Gender,88.44
+Kaggle Merck,100.0
+Kaggle Stackoverflow,100.0
+Gym,99.87
+Serpent.AI,100.0
+Roboschool,86.28
+SLM Lab,97.8
+Coach,94.23
+garage,89.49
+metaworld,70.46
+acme,99.88
+Spinning Up,99.66
+Maze,99.32
+RLlib,71.3

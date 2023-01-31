@@ -26,7 +26,7 @@ with open('data/python_metadata.csv', 'w') as f:
             python = 1
             total = 1
         
-        print(f"[{i}]: {repo} | python: {python}, total: {total}, prop: {round(python * 100 / total, 2)}")
+        print(f"[{i+1}]: {repo} | python: {python}, total: {total}, prop: {round(python * 100 / total, 2)}")
         i += 1
 
         f.write("%s,%s\n" % (repo, round(python * 100 / total, 2)))

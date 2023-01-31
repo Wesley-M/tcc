@@ -23,7 +23,7 @@ OUTPUT_NAME = "awesome_ml_filtered"
 
 repo_to_usage = {}
 
-with open("../repos_languages/data/python_metadata.csv") as f:
+with open("../../analysis/languages/data/python_metadata.csv") as f:
     reader = csv.reader(f, dialect="unix")
 
     # headers: ['category', 'name', 'link', 'description']
