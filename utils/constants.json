@@ -1,0 +1,8 @@
+{
+    "AWESOME_HEADER_ENUM": {
+        "TYPE": 0,
+        "NAME": 1,
+        "LINK": 2,
+        "DESCRIPTION": 3
+    }
+}

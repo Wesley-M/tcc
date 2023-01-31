@@ -13,6 +13,7 @@ python3 collect_github_urls.py recover
 """
 
 import csv
+import json
 import os
 import re
 import sys
@@ -20,13 +21,14 @@ import sys
 from dotenv import load_dotenv
 from github import Github
 
-CATEG = 0
-NAME = 1
-LINK = 2
-DESC = 3
+# Constants
+constants_f = open('../../utils/constants.json')
+constants = json.load(constants_f)
+
+HEADER = constants["AWESOME_HEADER_ENUM"]
 
 # Set it to True if the script failed before when searching for URLs
-SCRIPT_FAILED = True if sys.argv[1] == 'recover' else False
+SCRIPT_FAILED = True if len(sys.argv) > 1 and sys.argv[1] == 'recover' else False
 
 # The output file path
 OUTPUT = 'data/awesome_ml_plus_unknown_urls.csv'
@@ -68,19 +70,19 @@ def is_from_github(url):
 
 regular = 0
 for repo in awesome_list:
-    if not is_from_github(repo[LINK]):
-        print("{} - {}".format(repo[NAME], repo[LINK]))
-        possible_repos = g.search_repositories(repo[NAME])
+    if not is_from_github(repo[HEADER["LINK"]]):
+        print("{} - {}".format(repo[HEADER["NAME"]], repo[HEADER["LINK"]]))
+        possible_repos = g.search_repositories(repo[HEADER["NAME"]])
         try:
             if possible_repos.totalCount > 0:
                 print("Repo URL: {}.".format(possible_repos[0].html_url))
-                repo[LINK] = possible_repos[0].html_url
+                repo[HEADER["LINK"]] = possible_repos[0].html_url
             else:
                 print("There was no such repo O.o")
-                repo[LINK] = repo[LINK]
+                repo[HEADER["LINK"]] = repo[HEADER["LINK"]]
         except Exception as e:
             print(str(e))
-            repo[LINK] = repo[LINK]
+            repo[HEADER["LINK"]] = repo[HEADER["LINK"]]
     else:
         regular += 1
 

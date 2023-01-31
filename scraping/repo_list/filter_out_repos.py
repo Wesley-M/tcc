@@ -8,7 +8,7 @@ import os
 
 constants_f = open('../utils/constants.json')
 constants = json.load(constants_f)
-AWL_HEADER = constants["AWL_HEADER_ENUM"]
+AWL_HEADER = constants["AWESOME_HEADER_ENUM"]
 
 # Where the filtered results will go
 filtered_results_f = open("data/filtered_results_f.csv", "w+")

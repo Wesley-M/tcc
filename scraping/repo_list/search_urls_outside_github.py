@@ -3,15 +3,17 @@ This script identifies all the listed repos with links pointing outside of githu
 """
 
 import csv
+import json
 import re
 
 awesome_list = []
 unknown = []
 
-CATEG = 0
-NAME = 1
-LINK = 2
-DESC = 4
+# Constants
+constants_f = open('../../utils/constants.json')
+constants = json.load(constants_f)
+
+HEADER = constants["AWESOME_HEADER_ENUM"]
 
 with open('data/awesome_ml.csv', 'r', encoding='utf-8', newline='') as f:
     reader = csv.reader(f, dialect='unix')
@@ -24,8 +26,8 @@ with open('data/awesome_ml.csv', 'r', encoding='utf-8', newline='') as f:
 
 # Catching all the urls that don't match the pattern: https://github.com
 for repo in awesome_list:
-    if (re.match("https://github.com", repo[LINK]) == None):
-        unknown.append([repo[NAME], repo[LINK]])
+    if (re.match("https://github.com", repo[HEADER["LINK"]]) == None):
+        unknown.append([repo[HEADER["NAME"]], repo[HEADER["LINK"]]])
 
 # open the file in the write mode
 with open('data/unknown_repos.csv', 'w', encoding='utf-8', newline='') as f:
