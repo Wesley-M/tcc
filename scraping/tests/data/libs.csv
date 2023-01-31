@@ -1,0 +1,9 @@
+repo,libs,test_files_no,test_folders_no,test_paths,test_folders
+../../repos/Detectron/,unittest,13,2
+../../repos/detectron2/,unittest,69,3
+../../repos/face_recognition/,unittest,1,3
+../../repos/OpenFace/,,4,1
+../../repos/PCV/,,0,0
+../../repos/Scikit-Image/,"fixture,compare,pytest,doctest,unittest,ensure",149,19
+../../repos/Scikit-Opt/,unittest,2,1
+../../repos/SimpleCV/,nose,19,1
