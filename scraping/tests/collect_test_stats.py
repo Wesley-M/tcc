@@ -70,7 +70,7 @@ def get_libs_from_repo(test_locations, repo_path):
         return first_word == 'import' or (first_word == 'from' and 'import' in line)
     
     def contain_lib(line, lib):
-        return re.search(f' {lib}(,|\n| )?', line)
+        return re.search(f' {lib}(,|\n| |\s)', line)
     
     for filepath in test_locations[repo_path]['test_files']:
         # Opening test file and ignoring non-utf8 characters

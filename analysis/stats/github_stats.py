@@ -86,7 +86,7 @@ for curr_pos, repo in enumerate(repos):
             repo["forks"] = curr.forks_count
             repo["open-issues"] = curr.open_issues_count
             repo["repo_size"] = folder_size(
-                "../repos/{}".format(repo["name"].replace(" ", "_"))
+                "../../repos/{}".format(repo["name"].replace(" ", "_"))
             )
             repo["commits"] = commit_count(repo["fullname"])
 
