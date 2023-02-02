@@ -1,0 +1,2 @@
+severity	updateDate	comments	line	author	rule	project	effort	message	creationDate	type	quickFixAvailable	tags	component	flows	scope	textRange	debt	key	hash	status
+MAJOR	2022-06-19T16:57:26-0300		22.0	proycon@anaproy.nl	python:S125	python-ucto	5min	Remove this commented out code.	2018-03-06T17:23:09-0300	CODE_SMELL	false	"unused / "	python-ucto:setup.py		MAIN	{startLine=22.0, endLine=22.0, startOffset=4.0, endOffset=52.0}	5min	AYF9isEq-os8lNRVRQ7M	029ec58b5a27800471b387ccf096e0a3	OPEN

@@ -38,7 +38,7 @@ for i, repo in enumerate(awesome_list):
         if (len(repo[NAME].split()) > 1):
             repo_name = repo[NAME].replace(" ", "_")
         
-        if not os.path.isdir("./repos/{}".format(repo_name)):
+        if not os.path.isdir("repos/{}".format(repo_name)):
             print("\n[{}] Cloning {} ...".format(progress, repo[LINK]))
             print("git clone {} \"./repos/{}\"".format(repo[LINK], repo_name))
             os.system("git clone {} \"./repos/{}\"".format(repo[LINK], repo_name))

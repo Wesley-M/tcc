@@ -1,5 +1,5 @@
 """
-This script tries to find the Github URL for projects with URLs pointing outside Github domain.
+It tries to find the Github URL for projects with URLs pointing outside Github domain.
 For example, some projects point to their's project site, instead of the Github repository.
 
 The results still need to be manually verified, given that we search for the project name on Github,
@@ -22,7 +22,7 @@ from dotenv import load_dotenv
 from github import Github
 
 # Constants
-constants_f = open('../../utils/constants.json')
+constants_f = open('../../config/constants.json')
 constants = json.load(constants_f)
 
 HEADER = constants["AWESOME_HEADER_ENUM"]
@@ -58,9 +58,7 @@ with open(FILE_TO_READ, 'r', encoding='utf-8', newline='') as f:
 # Setting the github client
 
 load_dotenv()
-
 PERSONAL_TOKEN = os.getenv('PERSONAL_TOKEN')
-
 g = Github(PERSONAL_TOKEN)
 
 # Swapping unknown urls for Github's urls

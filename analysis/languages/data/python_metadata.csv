@@ -5,7 +5,7 @@ SimpleCV,96.55
 OpenFace,41.61
 PCV,99.68
 face_recognition,79.17
-deepface,98.68
+deepface,98.59
 retinaface,100.0
 Detectron,92.98
 detectron2,93.95
@@ -90,7 +90,7 @@ astroML,99.81
 BigML,100.0
 NuPIC,97.5
 Pylearn2,51.73
-keras,97.55
+keras,97.54
 Lasagne,100.0
 hebel,100.0
 Chainer,76.29
@@ -118,7 +118,7 @@ neurolab,79.56
 Spearmint,99.76
 Pebl,83.83
 Theano,93.84
-TensorFlow,21.07
+TensorFlow,21.08
 python-timbl,63.4
 deap,86.48
 pydeep,100.0
@@ -135,8 +135,8 @@ milk,82.38
 TFLearn,100.0
 fuku-ml,99.92
 Xcessiv,59.54
-PyTorch,43.56
-PyTorch Lightning,98.71
+PyTorch,43.62
+PyTorch Lightning,98.7
 PyTorch Lightning Bolts,99.92
 skorch,30.5
 ML-From-Scratch,100.0
@@ -153,7 +153,7 @@ Thampi,100.0
 MindsDB,99.63
 Microsoft Recommenders,97.96
 StellarGraph,98.78
-BentoML,93.88
+BentoML,93.81
 MiraiML,98.06
 numpy-ML,100.0
 Neuraxle,99.93
@@ -165,12 +165,12 @@ Lightwood,53.14
 bayeso,100.0
 mljar-supervised,100.0
 evostra,100.0
-Determined,34.89
+Determined,34.83
 PyGrid,99.22
 sktime,99.57
 OPFython,100.0
 Opytimizer,100.0
-Gradio,8.43
+Gradio,7.9
 Hub,99.98
 Synthia,89.21
 ByteHub,100.0
@@ -179,26 +179,26 @@ River,97.59
 FEDOT,99.94
 Sklearn-genetic-opt,100.0
 Evidently,95.73
-Streamlit,52.7
+Streamlit,52.68
 Optuna,99.57
 Deepchecks,98.81
 Cartopy,97.45
 SciPy,56.8
-NumPy,61.76
+NumPy,61.47
 AutoViz,100.0
 Numba,92.4
 Mars,96.92
 NetworkX,100.0
 igraph,97.81
-Pandas,90.08
+Pandas,90.09
 Vaex,60.87
 Open Mining,98.16
-PyMC,99.59
+PyMC,99.6
 zipline,95.74
 PyDy,81.11
 SymPy,98.37
 statsmodels,92.69
-astropy,65.62
+astropy,65.63
 matplotlib,90.94
 bokeh,53.67
 plotly,98.01
@@ -219,14 +219,14 @@ NuPIC Studio,99.59
 SparklingPandas,91.7
 Seaborn,99.98
 ipychart,56.06
-bqplot,20.73
-Superset,31.0
+bqplot,20.81
+Superset,31.07
 Dora,100.0
 Ruffus,99.22
 visualize_ML,100.0
 scikit-plot,100.0
 Bowtie,72.17
-PyCM,97.52
+PyCM,97.57
 Dash,36.55
 Lambdo,100.0
 dowel,98.74
@@ -257,7 +257,7 @@ Neuron,100.0
 Data Driven Code,100.0
 TResNet: High Performance GPU-Dedicated Architecture,100.0
 TResNet: Simple and powerful neural network library for python,79.56
-Jina AI,98.78
+Jina AI,98.79
 sequitur,100.0
 open-solution-home-credit,56.25
 open-solution-googleai-object-detection,97.29
@@ -291,4 +291,4 @@ metaworld,70.46
 acme,99.88
 Spinning Up,99.66
 Maze,99.32
-RLlib,71.3
+RLlib,71.16

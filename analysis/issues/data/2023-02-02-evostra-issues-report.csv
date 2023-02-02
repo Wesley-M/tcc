@@ -1,0 +1,2 @@
+severity	updateDate	comments	line	author	rule	project	effort	message	creationDate	type	quickFixAvailable	tags	component	flows	scope	textRange	debt	key	hash	status
+MINOR	2022-09-15T14:02:03-0300		37.0	alirezamika@gmail.com	python:S1481	evostra	5min	"Remove the unused local variable ""i""."	2018-05-10T13:53:58-0300	CODE_SMELL	false	"unused / "	evostra:evostra/algorithms/evolution_strategy.py		MAIN	{startLine=37.0, endLine=37.0, startOffset=12.0, endOffset=13.0}	5min	AYNCGckOop39vzmIhxFS	2678266f9b30e2c67df35cb22612428d	OPEN

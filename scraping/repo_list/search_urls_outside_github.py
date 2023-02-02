@@ -1,5 +1,5 @@
 """
-This script identifies all the listed repos with links pointing outside of github
+It identifies all the listed repos with links pointing outside of github
 """
 
 import csv
@@ -10,7 +10,7 @@ awesome_list = []
 unknown = []
 
 # Constants
-constants_f = open('../../utils/constants.json')
+constants_f = open('../../config/constants.json')
 constants = json.load(constants_f)
 
 HEADER = constants["AWESOME_HEADER_ENUM"]
@@ -29,7 +29,7 @@ for repo in awesome_list:
     if (re.match("https://github.com", repo[HEADER["LINK"]]) == None):
         unknown.append([repo[HEADER["NAME"]], repo[HEADER["LINK"]]])
 
-# open the file in the write mode
+# open the file in write mode
 with open('data/unknown_repos.csv', 'w', encoding='utf-8', newline='') as f:
     writer = csv.writer(f, dialect='unix')
     

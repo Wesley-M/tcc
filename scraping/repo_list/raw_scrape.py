@@ -1,5 +1,5 @@
 """
-Here, we are going to roughly scrape the list on github
+It roughly scrapes the list on github
 """
 
 import csv
@@ -9,7 +9,6 @@ from bs4 import BeautifulSoup
 
 REPO_URL = "https://github.com/josephmisiti/awesome-machine-learning"
 
-# The content on the page in HTML
 REPO_HTML = requests.get(REPO_URL)
 
 PARSED_REPO_CONTENT = BeautifulSoup(REPO_HTML.content, "html.parser")

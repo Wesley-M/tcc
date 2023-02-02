@@ -10,7 +10,7 @@ from github import Github
 
 languages_api = "https://api.github.com/repos/{}/{}/languages"
 languages_md = {}
-total_lines = num_lines = sum(1 for line in open('../../scraping/repo_list/data/awesome_ml_mv.csv'))
+total_lines = sum(1 for line in open('../../scraping/repo_list/data/awesome_ml_mv.csv'))
 
 # Github client
 load_dotenv()
@@ -20,7 +20,7 @@ PERSONAL_TOKEN = os.getenv('PERSONAL_TOKEN')
 g = Github(PERSONAL_TOKEN)
 
 # Constants
-constants_f = open('../../utils/constants.json')
+constants_f = open('../../config/constants.json')
 constants = json.load(constants_f)
 
 HEADER = constants["AWESOME_HEADER_ENUM"]

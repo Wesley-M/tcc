@@ -1,0 +1,2 @@
+severity	updateDate	comments	line	author	rule	project	effort	message	creationDate	type	quickFixAvailable	tags	component	flows	scope	textRange	debt	key	hash	status
+INFO	2022-06-20T08:08:08-0300		111.0	iskaldur@gmail.com	python:S1135	Restricted_Boltzmann_Machines	0min	"Complete the task associated to this ""TODO"" comment."	2011-07-17T19:51:29-0300	CODE_SMELL	false	"cwe / "	Restricted_Boltzmann_Machines:rbm.py		MAIN	{startLine=111.0, endLine=111.0, startOffset=2.0, endOffset=76.0}	0min	AYGAzICq-os8lNRVS-85	11610695bba9b227824d275354435ab8	OPEN
