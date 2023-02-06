@@ -50,7 +50,7 @@ bugs <- merge(merged_issues, libs_stats, by = "name") %>%
 
 bugs <- bugs %>%
     mutate(normalized_bug = 1 / ncloc)
-    
+
 # ----
 
 diff <- function(m, n) {

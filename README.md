@@ -3,7 +3,7 @@
 The current repository serves as a storage for all scripts used for the paper purposes.
 
 Before we dive in deeper in the repo structure, make sure to have a Github API token setup.
-Several od the scripts depend on it.
+Several of the scripts depend on it.
 
     Create a .env file with your token on the root dir, with the content:
         PERSONAL_TOKEN=YOUR_TOKEN
@@ -25,3 +25,7 @@ folder has a README.md, where you can find the instructions and usage of the scr
 
 3. Analysis folder is composed of coverage, issues, languages and stats sub-folders. Each
 one of them have their respective scripts and instructions. 
+
+### To reproduce the research you could: 
+
+#### Work in progress

@@ -16,7 +16,6 @@ known_libs = [
     'unittest2',
     'hypothesis',
     'behaviour',
-    'ensure',
     'moto',
     'mongomock',
     'pytest_mock',
@@ -29,7 +28,6 @@ known_libs = [
     'examples',
     'doctest',
     'testbook',
-    'cases',
     'compare',
     'fixtures',
     'flask_testing',
@@ -42,13 +40,10 @@ known_libs = [
     'pytest_cases',
     'pytests_remotedata',
     'testpath',
-    'test_utils',
     'testtools',
     'xmlrunner',
     'runtests',
-    'test_helpers',
     'baycomp',
-    'the',
     'flaky',
     'parameterized',
     'should',
@@ -70,7 +65,13 @@ def get_libs_from_repo(test_locations, repo_path):
         return first_word == 'import' or (first_word == 'from' and 'import' in line)
     
     def contain_lib(line, lib):
-        return re.search(f' {lib}(,|\n| |\s)', line)
+        """ The lib name is in the line, in the right order """
+        if re.search(f' {lib}(,|\n| |\s)', line):
+            if line.find("from") < line.find(lib) and line.find(lib) < line.find("import"):
+                return True
+            if not "from" in line and line.find("import") < line.find(lib):
+                return True
+        return False
     
     for filepath in test_locations[repo_path]['test_files']:
         # Opening test file and ignoring non-utf8 characters

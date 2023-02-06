@@ -34,15 +34,22 @@ merged <- merged %>%
 
 print(nrow(github_metadata))
 
-merged %>%
+cov_tracking <- merged %>%
     select(tracking_tool) %>%
     group_by(tracking_tool) %>%
     rename("Coverage tracking tool" = tracking_tool) %>%
     summarise("# of projects that adopt the tool" = n(), "%" = paste(round(n() / nrow(github_metadata) * 100, 2), "%")) %>%
-    arrange(desc(`# of projects that adopt the tool`)) %>%
+    arrange(desc(`# of projects that adopt the tool`))
+
+cov_tracking %>%
     kbl() %>%
     kable_styling(full_width = F) %>%
     save_kable(here(add_base_dir("plots/images/coverage_tracking_tool.png")))
+
+cov_tracking %>%
+    kbl(format = "latex") %>%
+    kable_styling(full_width = F) %>%
+    save_kable(here(add_base_dir("plots/images/coverage_tracking_tool.tex")))
 
 total_projects <- github_metadata %>%
     group_by(type) %>%
@@ -81,3 +88,8 @@ rbind(cov_by_type, totals) %>%
     kbl() %>%
     kable_styling(full_width = F) %>%
     save_kable(here(add_base_dir("plots/images/cov_by_type.png")))
+
+rbind(cov_by_type, totals) %>%
+    kbl(format = "latex") %>%
+    kable_styling(full_width = F) %>%
+    save_kable(here(add_base_dir("plots/images/cov_by_type.tex")))
